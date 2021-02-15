@@ -1,0 +1,657 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .haut {
+  width: 95%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .haut p {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+header .haut .droite {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .haut .droite a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+header .haut .droite a:hover {
+  text-shadow: #31B141 2px 2px;
+}
+
+header .haut .droite .burger {
+  width: 38px;
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .haut .droite .burger .ligne {
+  width: 100%;
+  height: 5px;
+  border-radius: 100px;
+  background-color: #31B141;
+}
+
+header .millieu {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .millieu img {
+  width: 20%;
+  height: auto;
+}
+
+header .millieu div {
+  margin-left: 150px;
+}
+
+header .millieu div h1 {
+  font-size: 5rem;
+}
+
+header .millieu div h2 {
+  font-size: 10rem;
+  text-shadow: #31B141 4px 4px;
+}
+
+header .millieu div h3 {
+  font-size: 3rem;
+  margin-top: 50px;
+}
+
+header .bas {
+  width: 95%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .bas p {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .balise {
+  width: 95%;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+main .balise2 {
+  width: 95%;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+main .presentation {
+  width: 75%;
+  height: 60vh;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .presentation img {
+  width: 35%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .presentation .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .presentation .description p span {
+  color: #31B141;
+}
+
+main .presentation .description p:first-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+main .presentation .description p:last-child {
+  margin: 20px 0px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main .citation {
+  margin-top: 100px;
+  width: 100%;
+  height: 45vh;
+  background-image: url("assets/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg");
+  background-size: cover;
+  background-position-y: -450px;
+  position: relative;
+}
+
+main .citation .filtre {
+  width: 100%;
+  height: 100%;
+  background-color: #4FC5E9;
+  opacity: 0.5;
+  position: absolute;
+}
+
+main .citation .text {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+main .citation .text h3 {
+  font-size: 5rem;
+  color: white;
+}
+
+main .citation .text p {
+  font-size: 3rem;
+  margin-top: 15px;
+  color: white;
+}
+
+main .cursus-competence {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+main .cursus-competence .cursus {
+  width: auto;
+  height: auto;
+}
+
+main .cursus-competence .cursus h2 {
+  font-size: 4rem;
+  text-shadow: #31B141 3px 3px;
+}
+
+main .cursus-competence .cursus .annee {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+main .cursus-competence .cursus .boite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .cursus-competence .cursus .cursus-boite {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 8px;
+}
+
+main .cursus-competence .cursus .cursus-boite .deco {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .cursus-competence .cursus .cursus-boite .deco .rond {
+  width: 15px;
+  height: 15px;
+  border: 3px solid #31B141;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+main .cursus-competence .cursus .cursus-boite .deco .barre {
+  width: 3px;
+  height: 92%;
+  background-color: #31B141;
+  margin-right: 10px;
+}
+
+main .cursus-competence .cursus .cursus-boite .texte {
+  margin-top: 50px;
+  padding-bottom: 15px;
+}
+
+main .cursus-competence .cursus .cursus-boite .texte .titre {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+main .cursus-competence .cursus .cursus-boite .texte .desc {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+main .cursus-competence .cursus .cursus-boite .texte .mat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .cursus-competence .cursus .cursus-boite .texte .mat .rond {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+main .cursus-competence .cursus .cursus-boite .texte .mat p {
+  font-size: 1.2rem;
+}
+
+main .cursus-competence .competence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .cursus-competence .competence .interer {
+  margin-bottom: 25px;
+}
+
+main .cursus-competence .competence .interer h3 {
+  font-size: 2.5rem;
+}
+
+main .cursus-competence .competence .interer .boite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+}
+
+main .cursus-competence .competence .interer .boite .rond {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+main .cursus-competence .competence .comp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+main .cursus-competence .competence .comp .titre {
+  width: 100%;
+}
+
+main .cursus-competence .competence .comp .titre h4 {
+  font-size: 2.5rem;
+}
+
+main .cursus-competence .competence .comp .titre .n1 {
+  width: 60%;
+  height: 3px;
+  background-color: #31B141;
+}
+
+main .cursus-competence .competence .comp .titre .n2 {
+  width: 82%;
+  height: 3px;
+  background-color: #31B141;
+}
+
+main .cursus-competence .competence .comp .titre .n3 {
+  width: 77%;
+  height: 3px;
+  background-color: #31B141;
+}
+
+main .cursus-competence .competence .comp .element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+}
+
+main .cursus-competence .competence .comp .element .deco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .cursus-competence .competence .comp .element .deco .vertical {
+  width: 3px;
+  height: 25px;
+  background-color: #31B141;
+}
+
+main .cursus-competence .competence .comp .element .deco .horizontal {
+  width: 25px;
+  height: 3px;
+  background-color: #31B141;
+  margin-right: 5px;
+}
+
+main .cursus-competence .competence .comp .element .deco .phrase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .cursus-competence .competence .comp .element .deco .phrase p {
+  margin-right: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  color: white;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .balise {
+  width: 98%;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+footer .balise2 {
+  width: 98%;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+footer .content {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .content h4 {
+  font-size: 5rem;
+  text-shadow: #31B141 4px 4px;
+}
+
+footer .content .liens {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .content .liens .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+footer .content .liens .icon i {
+  font-size: 4rem;
+  color: white;
+  margin-right: 10px;
+  margin: 5px 20px;
+}
+
+footer .content .liens .lien {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .content .liens .lien a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */

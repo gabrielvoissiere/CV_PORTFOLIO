@@ -1,0 +1,487 @@
+@import "style/variables";
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .haut {
+        width: 95%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+        .droite {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                font-size: 1.8rem;
+                font-weight: 400;
+                text-decoration: none;
+                color: black;
+                transition: 300ms ease-in-out;
+            }
+
+            a:hover {
+                text-shadow: $deuxieme-couleur 2px 2px;
+            }
+
+            .burger {
+                width: 38px;
+                height: 38px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .ligne {
+                    width: 100%;
+                    height: 5px;
+                    border-radius: 100px;
+                    background-color: $deuxieme-couleur;
+                }
+            }
+        }
+    }
+
+    .millieu {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 20%;
+            height: auto;
+        }
+
+        div {
+            margin-left: 150px;
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            h2 {
+                font-size: 10rem;
+                text-shadow: $deuxieme-couleur 4px 4px;
+            }
+
+            h3 {
+                font-size: 3rem;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .bas {
+        width: 95%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        p {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .balise {
+        width: 95%;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .balise2 {
+        width: 95%;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: right;
+    }
+
+    .presentation {
+        width: 75%;
+        height: 60vh;
+        align-self: center;
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+        img {
+            width: 35%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+
+            p span {
+                color: $deuxieme-couleur;
+            }
+
+            p:first-child {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+
+            p:last-child {
+                margin: 20px 0px;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .citation {
+        margin-top: 100px;
+        width: 100%;
+        height: 45vh;
+        background-image: url("assets/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg");
+        background-size: cover;
+        background-position-y: -450px;
+        position: relative;
+
+        .filtre {
+            width: 100%;
+            height: 100%;
+            background-color: $troisieme-couleur;
+            opacity: 0.5;
+            position: absolute;
+        }
+
+        .text {
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+            h3 {
+                font-size: 5rem;
+                color: white;
+            }
+
+            p {
+                font-size: 3rem;
+                margin-top: 15px;
+                color: white;
+            }
+        }
+    }
+
+    .cursus-competence {
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 60px;
+
+        .cursus {
+            width: auto;
+            height: auto;
+
+            h2 {
+                font-size: 4rem;
+                text-shadow: $deuxieme-couleur 3px 3px;
+            }
+
+            .annee {
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin-right: 15px;
+            }
+
+            .boite {
+                display: flex;
+            }
+
+            .cursus-boite {
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 8px;
+
+                .deco {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .deco .rond {
+                    width: 15px;
+                    height: 15px;
+                    border: 3px solid $deuxieme-couleur;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+
+                .deco .barre {
+                    width: 3px;
+                    height: 92%;
+                    background-color: $deuxieme-couleur;
+                    margin-right: 10px;
+                }
+
+                .texte {
+                    margin-top: 50px;
+                    padding-bottom: 15px;
+
+                    .titre {
+                        font-weight: 600;
+                        font-size: 1.8rem;
+                        margin-bottom: 20px;
+                    }
+
+                    .desc {
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                        margin-bottom: 15px;
+                    }
+
+                    .mat {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .rond {
+                            width: 8px;
+                            height: 8px;
+                            background-color: black;
+                            border-radius: 100%;
+                            margin-right: 5px;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .competence {
+            display: flex;
+            flex-direction: column;
+
+            .interer {
+                margin-bottom: 25px;
+
+                h3 {
+                    font-size: 2.5rem;
+                }
+
+                .boite {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-size: 1.5rem;
+
+                    .rond {
+                        width: 8px;
+                        height: 8px;
+                        background-color: black;
+                        border-radius: 100%;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .comp {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+
+                .titre {
+                    width: 100%;
+
+                    h4 {
+                        font-size: 2.5rem;
+                    }
+
+                    .n1 {
+                        width: 60%;
+                        height: 3px;
+                        background-color: $deuxieme-couleur;
+                    }
+
+                    .n2 {
+                        width: 82%;
+                        height: 3px;
+                        background-color: $deuxieme-couleur;
+                    }
+
+                    .n3 {
+                        width: 77%;
+                        height: 3px;
+                        background-color: $deuxieme-couleur;
+                    }
+                }
+
+                .element {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 10px;
+
+                    .deco {
+                        display: flex;
+
+                        .vertical {
+                            width: 3px;
+                            height: 25px;
+                            background-color: $deuxieme-couleur;
+                        }
+
+                        .horizontal {
+                            width: 25px;
+                            height: 3px;
+                            background-color: $deuxieme-couleur;
+                            margin-right: 5px;
+                        }
+
+                        .phrase {
+                            display: flex;
+                            align-items: center;
+
+                            p {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 40vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .balise {
+        width: 98%;
+        font-size: 3rem;
+        font-weight: 500;
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+    .balise2 {
+        width: 98%;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-content: space-between;
+
+        h4 {
+            font-size: 5rem;
+            text-shadow: $deuxieme-couleur 4px 4px;
+        }
+
+        .liens {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .icon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+
+                i {
+                    font-size: 4rem;
+                    color: white;
+                    margin-right: 10px;
+                    margin: 5px 20px;
+                }
+            }
+
+            .lien {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: space-around;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
