@@ -26,6 +26,44 @@ body {
     height: 100vh;
 }
 
+noscript {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $deuxieme-couleur;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+        margin: 20px 0px;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    a {
+        font-size: 1.7rem;
+        color: white;
+        padding-bottom: 20px;
+        font-weight: 600;
+    }
+}
+
+.flou {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.85;
+    position: fixed;
+    z-index: 2;
+}
+
 header {
     width: 100%;
     height: 100vh;
