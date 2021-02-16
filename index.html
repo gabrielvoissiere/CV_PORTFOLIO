@@ -25,16 +25,18 @@
 <body>
 
     <noscript>
-        <p>
-            Mon CV contient du javascript mais votre <br>
-            navigateur le bloque. Vous ne pourrez pas <br>
-            naviguer entre les pages 🙁
-        </p>
+        <div>
+            <p>
+                Mon CV contient du javascript mais votre <br>
+                navigateur le bloque. Vous ne pourrez pas <br>
+                naviguer entre les pages 🙁
+            </p>
+            <a href="https://support.google.com/adsense/answer/12654?hl=fr" target="blank">Comment activer Javascript
+                ?</a>
+        </div>
 
-        <a href="https://support.google.com/adsense/answer/12654?hl=fr" target="blank">Comment activer Javascript ?</a>
+        <div class="flou"></div>
     </noscript>
-
-    <div class="flou"></div>
 
     <header>
         <!-- partie haute -->
@@ -46,7 +48,7 @@
                 <!-- langue -->
                 <a href="#">English</a>
                 <!-- burger -->
-                <div class="burger">
+                <div class="burger" onclick="location.href = 'pages/menu.html';">
                     <div class="ligne"></div>
                     <div class="ligne"></div>
                     <div class="ligne"></div>
@@ -414,6 +416,8 @@
             <p>&#60;/footer&#62;</p>
         </div>
     </footer>
+
+
 </body>
 
 </html>

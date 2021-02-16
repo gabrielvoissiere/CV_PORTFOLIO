@@ -1,0 +1,104 @@
+// element's transision
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+    transition: 400ms ease-in-out;
+}
+
+// darkMode settings
+.darkMode-button {
+    font-size: 2vw;
+    font-weight: 500;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .corps {
+        width: 4vw;
+        height: 2vw;
+        margin-left: 20px;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px;
+        border: 3px solid white;
+
+        .rond {
+            height: 2vw;
+            width: 2vw;
+            border-radius: 100px;
+            background-color: white;
+            transform: translateX(100%);
+        }
+    }
+}
+
+.darkMode-background {
+    background-color: black;
+}
+
+.darkMode-text {
+    color: white;
+}
+
+.darkMode-shadow {
+    text-shadow: red 4px 4px;
+}
+
+.darkMode-border {
+    background-color: white;
+}
+
+
+// lightMode settings
+.lightMode-button {
+    font-size: 2vw;
+    font-weight: 500;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    .corps {
+        width: 4vw;
+        height: 2vw;
+        margin-left: 20px;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px;
+        border: 3px solid black;
+
+        .rond {
+            height: 2vw;
+            width: 2vw;
+            border-radius: 100px;
+            background-color: black;
+        }
+    }
+}
+
+.lightMode-background {
+    background-color: white;
+}
+
+.lightMode-text {
+    color: black;
+}
+
+.lightMode-shadow {
+    text-shadow: green 4px 4px;
+}
+
+.lightMode-border {
+    background-color: black;
+}
