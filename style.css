@@ -61,7 +61,7 @@ header .haut {
 }
 
 header .haut p {
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 500;
 }
 
@@ -84,12 +84,13 @@ header .haut .droite {
 }
 
 header .haut .droite a {
-  font-size: 1.8rem;
+  font-size: 1.6vw;
   font-weight: 400;
   text-decoration: none;
   color: black;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
+  margin-right: 10px;
 }
 
 header .haut .droite a:hover {
@@ -145,20 +146,20 @@ header .millieu img {
 }
 
 header .millieu div {
-  margin-left: 150px;
+  margin-left: 5vw;
 }
 
 header .millieu div h1 {
-  font-size: 5rem;
+  font-size: 4vw;
 }
 
 header .millieu div h2 {
-  font-size: 10rem;
+  font-size: 7vw;
   text-shadow: #31B141 4px 4px;
 }
 
 header .millieu div h3 {
-  font-size: 3rem;
+  font-size: 2vw;
   margin-top: 50px;
 }
 
@@ -181,7 +182,7 @@ header .bas {
 }
 
 header .bas p {
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 500;
 }
 
@@ -202,19 +203,19 @@ main {
 
 main .balise {
   width: 95%;
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 500;
 }
 
 main .balise2 {
   width: 95%;
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 500;
   text-align: right;
 }
 
 main .presentation {
-  width: 75%;
+  width: 75vw;
   height: 60vh;
   -ms-flex-item-align: center;
       align-self: center;
@@ -235,8 +236,8 @@ main .presentation {
 }
 
 main .presentation img {
-  width: 35%;
-  height: 100%;
+  width: 30vw;
+  height: 35vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -256,20 +257,20 @@ main .presentation .description p span {
 }
 
 main .presentation .description p:first-child {
-  font-size: 1.5rem;
+  font-size: 1.2vw;
   font-weight: 500;
 }
 
 main .presentation .description p:last-child {
   margin: 20px 0px;
-  font-size: 2rem;
+  font-size: 1.5vw;
   font-weight: 600;
 }
 
 main .citation {
   margin-top: 100px;
-  width: 100%;
-  height: 45vh;
+  width: 100vw;
+  height: 25vw;
   background-image: url("assets/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg");
   background-size: cover;
   background-position-y: -450px;
@@ -294,18 +295,18 @@ main .citation .text {
 }
 
 main .citation .text h3 {
-  font-size: 5rem;
+  font-size: 3vw;
   color: white;
 }
 
 main .citation .text p {
-  font-size: 3rem;
+  font-size: 2vw;
   margin-top: 15px;
   color: white;
 }
 
 main .cursus-competence {
-  width: 65%;
+  width: 85vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,12 +326,12 @@ main .cursus-competence .cursus {
 }
 
 main .cursus-competence .cursus h2 {
-  font-size: 4rem;
+  font-size: 4vw;
   text-shadow: #31B141 3px 3px;
 }
 
 main .cursus-competence .cursus .annee {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 500;
   margin-right: 15px;
 }
@@ -393,13 +394,13 @@ main .cursus-competence .cursus .cursus-boite .texte {
 
 main .cursus-competence .cursus .cursus-boite .texte .titre {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.8vw;
   margin-bottom: 20px;
 }
 
 main .cursus-competence .cursus .cursus-boite .texte .desc {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   margin-bottom: 15px;
 }
 
@@ -425,7 +426,7 @@ main .cursus-competence .cursus .cursus-boite .texte .mat .rond {
 }
 
 main .cursus-competence .cursus .cursus-boite .texte .mat p {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 
 main .cursus-competence .competence {
@@ -443,7 +444,7 @@ main .cursus-competence .competence .interer {
 }
 
 main .cursus-competence .competence .interer h3 {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
 }
 
 main .cursus-competence .competence .interer .boite {
@@ -457,7 +458,7 @@ main .cursus-competence .competence .interer .boite {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 main .cursus-competence .competence .interer .boite .rond {
@@ -484,7 +485,7 @@ main .cursus-competence .competence .comp .titre {
 }
 
 main .cursus-competence .competence .comp .titre h4 {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
 }
 
 main .cursus-competence .competence .comp .titre .n1 {
@@ -567,7 +568,7 @@ footer {
 
 footer .balise {
   width: 98%;
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 500;
   margin-top: 10px;
   -ms-flex-item-align: end;
@@ -576,7 +577,7 @@ footer .balise {
 
 footer .balise2 {
   width: 98%;
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 500;
   text-align: right;
   margin-bottom: 10px;
@@ -598,7 +599,7 @@ footer .content {
 }
 
 footer .content h4 {
-  font-size: 5rem;
+  font-size: 4vw;
   text-shadow: #31B141 4px 4px;
 }
 
@@ -628,7 +629,7 @@ footer .content .liens .icon {
 }
 
 footer .content .liens .icon i {
-  font-size: 4rem;
+  font-size: 3.5vw;
   color: white;
   margin-right: 10px;
   margin: 5px 20px;
@@ -652,6 +653,6 @@ footer .content .liens .lien {
 footer .content .liens .lien a {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5vw;
 }
 /*# sourceMappingURL=style.css.map */

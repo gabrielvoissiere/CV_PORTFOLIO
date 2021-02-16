@@ -43,7 +43,7 @@ header {
         align-items: center;
 
         p {
-            font-size: 3rem;
+            font-size: 2vw;
             font-weight: 500;
         }
 
@@ -56,11 +56,12 @@ header {
             align-items: center;
 
             a {
-                font-size: 1.8rem;
+                font-size: 1.6vw;
                 font-weight: 400;
                 text-decoration: none;
                 color: black;
                 transition: 300ms ease-in-out;
+                margin-right: 10px;
             }
 
             a:hover {
@@ -99,19 +100,19 @@ header {
         }
 
         div {
-            margin-left: 150px;
+            margin-left: 5vw;
 
             h1 {
-                font-size: 5rem;
+                font-size: 4vw;
             }
 
             h2 {
-                font-size: 10rem;
+                font-size: 7vw;
                 text-shadow: $deuxieme-couleur 4px 4px;
             }
 
             h3 {
-                font-size: 3rem;
+                font-size: 2vw;
                 margin-top: 50px;
             }
         }
@@ -126,7 +127,7 @@ header {
         justify-content: flex-end;
 
         p {
-            font-size: 3rem;
+            font-size: 2vw;
             font-weight: 500;
         }
     }
@@ -141,19 +142,19 @@ main {
 
     .balise {
         width: 95%;
-        font-size: 3rem;
+        font-size: 2vw;
         font-weight: 500;
     }
 
     .balise2 {
         width: 95%;
-        font-size: 3rem;
+        font-size: 2vw;
         font-weight: 500;
         text-align: right;
     }
 
     .presentation {
-        width: 75%;
+        width: 75vw;
         height: 60vh;
         align-self: center;
         margin-top: 35px;
@@ -164,8 +165,8 @@ main {
 
 
         img {
-            width: 35%;
-            height: 100%;
+            width: 30vw;
+            height: 35vw;
             object-fit: cover;
         }
 
@@ -178,13 +179,13 @@ main {
             }
 
             p:first-child {
-                font-size: 1.5rem;
+                font-size: 1.2vw;
                 font-weight: 500;
             }
 
             p:last-child {
                 margin: 20px 0px;
-                font-size: 2rem;
+                font-size: 1.5vw;
                 font-weight: 600;
             }
         }
@@ -192,8 +193,8 @@ main {
 
     .citation {
         margin-top: 100px;
-        width: 100%;
-        height: 45vh;
+        width: 100vw;
+        height: 25vw;
         background-image: url("assets/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg");
         background-size: cover;
         background-position-y: -450px;
@@ -215,12 +216,12 @@ main {
             transform: translateX(-50%) translateY(-50%);
 
             h3 {
-                font-size: 5rem;
+                font-size: 3vw;
                 color: white;
             }
 
             p {
-                font-size: 3rem;
+                font-size: 2vw;
                 margin-top: 15px;
                 color: white;
             }
@@ -228,7 +229,7 @@ main {
     }
 
     .cursus-competence {
-        width: 65%;
+        width: 85vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -239,12 +240,12 @@ main {
             height: auto;
 
             h2 {
-                font-size: 4rem;
+                font-size: 4vw;
                 text-shadow: $deuxieme-couleur 3px 3px;
             }
 
             .annee {
-                font-size: 1.5rem;
+                font-size: 1.5vw;
                 font-weight: 500;
                 margin-right: 15px;
             }
@@ -289,13 +290,13 @@ main {
 
                     .titre {
                         font-weight: 600;
-                        font-size: 1.8rem;
+                        font-size: 1.8vw;
                         margin-bottom: 20px;
                     }
 
                     .desc {
                         font-weight: 500;
-                        font-size: 1.2rem;
+                        font-size: 1.2vw;
                         margin-bottom: 15px;
                     }
 
@@ -313,7 +314,7 @@ main {
                         }
 
                         p {
-                            font-size: 1.2rem;
+                            font-size: 1.2vw;
                         }
                     }
                 }
@@ -328,14 +329,14 @@ main {
                 margin-bottom: 25px;
 
                 h3 {
-                    font-size: 2.5rem;
+                    font-size: 2.5vw;
                 }
 
                 .boite {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    font-size: 1.5rem;
+                    font-size: 1.5vw;
 
                     .rond {
                         width: 8px;
@@ -356,7 +357,7 @@ main {
                     width: 100%;
 
                     h4 {
-                        font-size: 2.5rem;
+                        font-size: 2.5vw;
                     }
 
                     .n1 {
@@ -425,7 +426,7 @@ footer {
 
     .balise {
         width: 98%;
-        font-size: 3rem;
+        font-size: 2vw;
         font-weight: 500;
         margin-top: 10px;
         align-self: flex-end;
@@ -433,7 +434,7 @@ footer {
 
     .balise2 {
         width: 98%;
-        font-size: 3rem;
+        font-size: 2vw;
         font-weight: 500;
         text-align: right;
         margin-bottom: 10px;
@@ -447,7 +448,7 @@ footer {
         justify-content: space-between;
 
         h4 {
-            font-size: 5rem;
+            font-size: 4vw;
             text-shadow: $deuxieme-couleur 4px 4px;
         }
 
@@ -463,7 +464,7 @@ footer {
                 height: 100%;
 
                 i {
-                    font-size: 4rem;
+                    font-size: 3.5vw;
                     color: white;
                     margin-right: 10px;
                     margin: 5px 20px;
@@ -479,7 +480,7 @@ footer {
                 a {
                     color: white;
                     text-decoration: none;
-                    font-size: 2rem;
+                    font-size: 1.5vw;
                 }
             }
         }
