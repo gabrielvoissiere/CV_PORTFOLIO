@@ -34,6 +34,18 @@ header {
     justify-content: center;
     align-items: center;
 
+    @media screen and (min-width: 600px) and (max-width: 914px) {
+        height: 50vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 25vh;
+    }
+
+    @media screen and (max-width: 414px) {
+        height: auto;
+    }
+
     .haut {
         width: 95%;
         height: 10%;
@@ -45,6 +57,10 @@ header {
         p {
             font-size: 2vw;
             font-weight: 500;
+
+            @media screen and (max-width: 414px) {
+                display: none;
+            }
         }
 
         .droite {
@@ -55,13 +71,20 @@ header {
             justify-content: space-between;
             align-items: center;
 
+            @media screen and (max-width: 414px) {
+                width: 100%;
+            }
+
             a {
                 font-size: 1.6vw;
                 font-weight: 400;
                 text-decoration: none;
                 color: black;
                 transition: 300ms ease-in-out;
-                margin-right: 10px;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 1.6rem;
+                }
             }
 
             a:hover {
@@ -69,8 +92,8 @@ header {
             }
 
             .burger {
-                width: 38px;
-                height: 38px;
+                width: 2.5vw;
+                height: 2.5vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -78,9 +101,18 @@ header {
 
                 .ligne {
                     width: 100%;
-                    height: 5px;
+                    height: 0.3vw;
                     border-radius: 100px;
                     background-color: $deuxieme-couleur;
+
+                    @media screen and (max-width: 414px) {
+                        height: 3px;
+                    }
+                }
+
+                @media screen and (max-width: 414px) {
+                    width: 25px;
+                    height: 25px;
                 }
             }
         }
@@ -94,26 +126,59 @@ header {
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: 414px) {
+            flex-direction: column;
+        }
+
         img {
             width: 20%;
             height: auto;
+
+            @media screen and (max-width: 414px) {
+                width: 30%;
+            }
         }
 
         div {
             margin-left: 5vw;
 
+            @media screen and (max-width: 414px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+
             h1 {
                 font-size: 4vw;
+
+                @media screen and (max-width: 414px) {
+                    margin-top: 15px;
+                    font-size: 2rem;
+                }
             }
 
             h2 {
                 font-size: 7vw;
                 text-shadow: $deuxieme-couleur 4px 4px;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 2.5rem;
+                }
             }
 
             h3 {
                 font-size: 2vw;
                 margin-top: 50px;
+
+                @media screen and (max-width: 414px) {
+                    margin-top: 5px;
+                    font-size: 1.5rem;
+                }
+
+                @media screen and (max-width: 320px) {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
@@ -129,6 +194,10 @@ header {
         p {
             font-size: 2vw;
             font-weight: 500;
+
+            @media screen and (max-width: 414px) {
+                display: none;
+            }
         }
     }
 }
@@ -144,6 +213,10 @@ main {
         width: 95%;
         font-size: 2vw;
         font-weight: 500;
+
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
     }
 
     .balise2 {
@@ -151,6 +224,10 @@ main {
         font-size: 2vw;
         font-weight: 500;
         text-align: right;
+
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
     }
 
     .presentation {
@@ -163,16 +240,38 @@ main {
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (min-width: 600px) and (max-width: 914px) {
+            height: 30vh;
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 20vh;
+        }
+
+        @media screen and (max-width: 414px) {
+            flex-direction: column;
+            height: auto;
+        }
+
 
         img {
             width: 30vw;
             height: 35vw;
             object-fit: cover;
+
+            @media screen and (max-width: 414px) {
+                width: 90vw;
+                height: 90vw;
+            }
         }
 
         .description {
             display: flex;
             flex-direction: column;
+
+            @media screen and (max-width: 414px) {
+                margin-top: 25px;
+            }
 
             p span {
                 color: $deuxieme-couleur;
@@ -181,12 +280,20 @@ main {
             p:first-child {
                 font-size: 1.2vw;
                 font-weight: 500;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 1.2rem;
+                }
             }
 
             p:last-child {
                 margin: 20px 0px;
                 font-size: 1.5vw;
                 font-weight: 600;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -199,6 +306,14 @@ main {
         background-size: cover;
         background-position-y: -450px;
         position: relative;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 414px) {
+            height: 60vw;
+        }
 
         .filtre {
             width: 100%;
@@ -218,12 +333,21 @@ main {
             h3 {
                 font-size: 3vw;
                 color: white;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 1.7rem;
+                    width: 99%;
+                }
             }
 
             p {
                 font-size: 2vw;
                 margin-top: 15px;
                 color: white;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -234,6 +358,17 @@ main {
         flex-direction: row;
         justify-content: space-between;
         margin-top: 60px;
+        
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            width: auto;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 414px) {
+            width: 95vw;
+
+        }
 
         .cursus {
             width: auto;
@@ -242,12 +377,20 @@ main {
             h2 {
                 font-size: 4vw;
                 text-shadow: $deuxieme-couleur 3px 3px;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 5rem;
+                }
             }
 
             .annee {
                 font-size: 1.5vw;
                 font-weight: 500;
                 margin-right: 15px;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 2rem;
+                }
             }
 
             .boite {
@@ -292,12 +435,20 @@ main {
                         font-weight: 600;
                         font-size: 1.8vw;
                         margin-bottom: 20px;
+
+                        @media screen and (max-width: 414px) {
+                            font-size: 1.2rem;
+                        }
                     }
 
                     .desc {
                         font-weight: 500;
                         font-size: 1.2vw;
                         margin-bottom: 15px;
+
+                        @media screen and (max-width: 414px) {
+                            font-size: 1.2rem;
+                        }
                     }
 
                     .mat {
@@ -315,6 +466,10 @@ main {
 
                         p {
                             font-size: 1.2vw;
+
+                            @media screen and (max-width: 414px) {
+                                font-size: 1rem;
+                            }
                         }
                     }
                 }
@@ -328,8 +483,17 @@ main {
             .interer {
                 margin-bottom: 25px;
 
+                @media screen and (max-width: 600px) {
+                    margin-bottom: 0px;
+                    margin-top: 25px;
+                }
+
                 h3 {
                     font-size: 2.5vw;
+
+                    @media screen and (max-width: 414px) {
+                        font-size: 2rem;
+                    }
                 }
 
                 .boite {
@@ -337,6 +501,10 @@ main {
                     flex-direction: row;
                     align-items: center;
                     font-size: 1.5vw;
+
+                    @media screen and (max-width: 414px) {
+                        font-size: 1.2rem;
+                    }
 
                     .rond {
                         width: 8px;
@@ -358,6 +526,10 @@ main {
 
                     h4 {
                         font-size: 2.5vw;
+
+                        @media screen and (max-width: 414px) {
+                            font-size: 2.5rem;
+                        }
                     }
 
                     .n1 {
@@ -406,6 +578,10 @@ main {
 
                             p {
                                 margin-right: 5px;
+
+                                @media screen and (max-width: 414px) {
+                                    font-size: 1.2rem;
+                                }
                             }
                         }
                     }
@@ -424,12 +600,40 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 
+    @media screen and (max-width: 914px) {
+        height: 25vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-top: 50px;
+    }
+
+    @media screen and (max-width: 414px) {
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+    }
+
+    @media screen and (max-width: 375px) {
+        margin-top: 5px;
+        font-size: 1.5rem;
+        height: 35vh;
+    }
+
+    @media screen and (max-width: 320px) {
+        height: 40vh;
+    }
+
     .balise {
         width: 98%;
         font-size: 2vw;
         font-weight: 500;
         margin-top: 10px;
         align-self: flex-end;
+
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
     }
 
     .balise2 {
@@ -438,6 +642,10 @@ footer {
         font-weight: 500;
         text-align: right;
         margin-bottom: 10px;
+
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
     }
 
     .content {
@@ -447,9 +655,21 @@ footer {
         align-self: center;
         justify-content: space-between;
 
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+
         h4 {
             font-size: 4vw;
             text-shadow: $deuxieme-couleur 4px 4px;
+
+            @media screen and (max-width: 600px) {
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 414px) {
+                font-size: 3rem;
+            }
         }
 
         .liens {
@@ -468,6 +688,10 @@ footer {
                     color: white;
                     margin-right: 10px;
                     margin: 5px 20px;
+
+                    @media screen and (max-width: 414px) {
+                        font-size: 2rem;
+                    }
                 }
             }
 
@@ -481,6 +705,14 @@ footer {
                     color: white;
                     text-decoration: none;
                     font-size: 1.5vw;
+
+                    @media screen and (max-width: 414px) {
+                        font-size: 1.2rem;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
