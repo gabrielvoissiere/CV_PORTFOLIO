@@ -23,15 +23,16 @@ div {
 }
 
 @include noscript;
-// @include apparition;
+@include navigation;
+@include animation;
+@include stopscroll;
 
 body {
     width: 100vw;
     height: 100vh;
-    animation: apparition 500ms 500ms both;
+    transition: 500ms ease-in-out;
+    overflow-x: hidden;
 }
-
-
 
 header {
     width: 100%;
@@ -105,15 +106,40 @@ header {
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
+                z-index: 999;
+                position: relative;
 
                 .ligne {
                     width: 100%;
                     height: 0.3vw;
                     border-radius: 100px;
                     background-color: $deuxieme-couleur;
+                    transition: 500ms ease-in-out;
+                    position: relative;
 
                     @media screen and (max-width: 414px) {
                         height: 3px;
+                    }
+                }
+
+                .l2 {
+                    width: 100%;
+                    height: 0.3vw;
+                    border-radius: 100px;
+                    transition: 500ms ease-in-out;
+                    position: relative;
+
+                    @media screen and (max-width: 414px) {
+                        height: 3px;
+                    }
+
+                    .l2-1, .l2-2 {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        background-color: $deuxieme-couleur;
+                        transition: 500ms ease-in-out;
+                        border-radius: 100px;
                     }
                 }
 

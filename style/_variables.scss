@@ -16,7 +16,7 @@ $troisieme-couleur : #4FC5E9;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 999;
-    
+
         div {
             width: 30%;
             height: auto;
@@ -26,13 +26,13 @@ $troisieme-couleur : #4FC5E9;
             background-color: $deuxieme-couleur;
             border-radius: 15px;
             padding: 20px;
-    
+
             p {
                 margin: 20px 0px;
                 font-size: 1.8rem;
                 font-weight: 500;
             }
-        
+
             a {
                 font-size: 1.7rem;
                 color: white;
@@ -40,9 +40,9 @@ $troisieme-couleur : #4FC5E9;
                 font-weight: 600;
             }
         }
-    
-        
-    
+
+
+
         .flou {
             width: 100vw;
             height: 100vh;
@@ -54,14 +54,115 @@ $troisieme-couleur : #4FC5E9;
     }
 }
 
-@mixin apparition {
-    @keyframes apparition {
-        0%{
-            opacity: 0;
+@mixin navigation {
+    nav {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 600ms ease-in-out;
+        transform: translateX(100%);
+        opacity: 0;
+
+        .haut {
+            font-size: 2vw;
+            height: 10%;
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .croix {
+                width: 2.5vw;
+                height: 2.5vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                .l2 {
+                    width: 100%;
+                    height: 0.3vw;
+                    border-radius: 100px;
+                    background-color: $deuxieme-couleur;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    transform-origin: center center;
+                }
+
+                .l1 {
+                    width: 100%;
+                    height: 0.3vw;
+                    border-radius: 100px;
+                    background-color: $deuxieme-couleur;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                    transform-origin: center center;
+                }
+            }
         }
-    
-        100%{
-            opacity: 1;
+
+        .millieu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80%;
+
+            h2 {
+                font-size: 5.5vw;
+                text-shadow: $deuxieme-couleur 4px 4px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
         }
+
+        .bas {
+            width: 95%;
+            height: 10%;
+            text-align: right;
+            font-size: 2vw;
+        }
+    }
+}
+
+@mixin animation {
+    .slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .rotleft {
+        transform-origin: center center;
+        transform: rotate(45deg);
+    }
+
+    .rotright {
+        transform-origin: center center;
+        transform: rotate(-45deg);
+    }
+
+    .hide {
+        // transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@mixin stopscroll {
+    .stop {
+        overflow: hidden;
     }
 }
