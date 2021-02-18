@@ -55,13 +55,16 @@ header {
 
     @media screen and (max-width: 414px) {
         height: auto;
+        margin-top: 25px;
     }
 
     p {
         font-size: 2.5vw;
         font-weight: 700;
 
-        @media screen and (max-width: 414px) {}
+        @media screen and (max-width: 414px) {
+            font-size: 5vw;
+        }
     }
 
     .burger {
@@ -127,6 +130,10 @@ main {
 
     h1 {
         font-size: 3vw;
+
+        @media screen and (max-width: 414px) {
+            font-size: 7vw;
+        }
     }
 
     .filtre {
@@ -137,6 +144,11 @@ main {
         justify-content: space-between;
         font-size: 1.5vw;
         margin-top: 25px;
+
+        @media screen and (max-width: 414px) {
+            font-size: 4vw;
+            width: 95%;
+        }
 
         div {
             transition: 500ms ease-in-out;
@@ -157,6 +169,14 @@ main {
         column-gap: 20px;
         margin: 35px 0px;
 
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 414px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
         .card {
             width: 100%;
             height: 100%;
@@ -174,10 +194,18 @@ main {
             h3 {
                 font-size: 2vw;
                 letter-spacing: 5px;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 8vw;
+                }
             }
 
             p {
                 font-size: 1vw;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 4vw;
+                }
             }
         }
     }

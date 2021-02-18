@@ -70,6 +70,8 @@ $troisieme-couleur : #4FC5E9;
 
         @media screen and (max-width: 1366px) {
             transform: translate(0);
+            z-index: -999;
+            position: absolute;
         }
 
         .haut {
@@ -127,7 +129,7 @@ $troisieme-couleur : #4FC5E9;
                 font-size: 5vw;
                 text-shadow: $deuxieme-couleur 4px 4px;
 
-                @media screen and (max-width: 375px) {
+                @media screen and (max-width: 414px) {
                     font-size: 15vw;
                 }
 
@@ -281,6 +283,7 @@ $troisieme-couleur : #4FC5E9;
     .slide {
         transform: translateX(0);
         opacity: 1;
+        z-index: 999;
 
         @media screen and (max-width: 1366px) {
             transform: translate(0);
