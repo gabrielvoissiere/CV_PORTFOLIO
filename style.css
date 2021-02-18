@@ -108,8 +108,15 @@ nav {
   opacity: 0;
 }
 
+@media screen and (max-width: 1366px) {
+  nav {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
 nav .haut {
-  font-size: 2vw;
+  font-size: 8vw;
   height: 10%;
   width: 95%;
   display: -webkit-box;
@@ -192,7 +199,7 @@ nav .millieu {
 }
 
 nav .millieu h2 {
-  font-size: 5.5vw;
+  font-size: 5vw;
   text-shadow: #31B141 4px 4px;
 }
 
@@ -211,13 +218,20 @@ nav .bas {
   width: 95%;
   height: 10%;
   text-align: right;
-  font-size: 2vw;
+  font-size: 8vw;
 }
 
 .slide {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 1;
+}
+
+@media screen and (max-width: 1366px) {
+  .slide {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 .rotleft {
