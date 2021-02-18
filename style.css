@@ -570,6 +570,17 @@ header .bas p {
   }
 }
 
+.loader {
+  background-image: url("assets/ajax-loader.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  cursor: wait;
+}
+
 main {
   width: 100%;
   height: auto;
