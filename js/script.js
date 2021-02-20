@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    // animation du burger et volet menu
     $(".burger").click(function () { 
         $("nav").toggleClass("slide") 
         $(".l2-1").toggleClass("rotleft")
@@ -8,6 +9,7 @@ $(document).ready(function(){
         $("body").toggleClass("stop")
     });
 
+    // bouton filtre des page realisations
     $(".all").click(function () { 
         $(this).siblings().removeClass("select")
         $(this).addClass("select")
@@ -34,4 +36,10 @@ $(document).ready(function(){
         $(".scolaire").css("display", "block")
         $(".professionel, .personnel").css("display", "none")
     });
+
+    // validation du formulaire
+        if ($("#name") == "") {
+            $("#caution").text("Veuillez remplir tous les champs")
+            $("#submit");addClass("disabled")
+        }
 })

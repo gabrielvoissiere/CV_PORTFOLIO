@@ -124,4 +124,55 @@ header {
     }
 }
 
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: auto;
+        margin: 100px 0px;
+        background-color: $deuxieme-couleur;
+        padding: 40px;
+        border-radius: 10px;
+
+        label {
+            margin-bottom: 5px;
+            font-size: 1vw;
+            font-weight: 600;
+        }
+
+        input {
+                margin-bottom: 10px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+                height: 30px;
+                padding: 0px 10px;
+        }
+
+        textarea {
+            margin-bottom: 25px;
+            border-radius: 8px;
+            outline: none;
+            border: none
+        }
+
+        button {
+            font-size: 0.8vw;
+            font-weight: 600;
+            height: 35px;
+            width: 50%;
+            align-self: center;
+            border: none;
+            border-radius: 10px;
+            outline: none
+        }
+    }
+}
+
 @include footer;

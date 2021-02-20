@@ -68,13 +68,15 @@
 
     <main>
         <form action="../form_1.php" method="POST">
+            <h3 id="cautionnom"></h3>
             <label for="name">Nom</label>
-            <input type="text" name="name">
+            <input id="name" type="text" name="name">
+            <h3 id="cautionmail"></h3>
             <label for="mail">Email</label>
-            <input type="mail" name="email">
+            <input id="email" type="mail" name="email">
             <label for="message">Votre message</label>
-            <textarea name="message" cols="30" rows="10"></textarea>
-            <button type="submit">Envoyer</button>
+            <textarea id="message" name="message" cols="30" rows="10"></textarea>
+            <button id="submit" type="submit">Envoyer</button>
         </form>
     </main>
 
@@ -110,6 +112,7 @@
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/form.js"></script>
 </body>
 
 </html>
