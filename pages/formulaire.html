@@ -11,7 +11,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/monogram.svg">
     <!-- CSS -->
-    <link rel="stylesheet" href="../style/realisation.css">
+    <link rel="stylesheet" href="../style/formulaire.css">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/d55e797bfb.js" crossorigin="anonymous"></script>
     <!-- google font -->
@@ -67,59 +67,15 @@
     </header>
 
     <main>
-        <h1>Mes réalisations</h1>
-
-        <div class="filtre">
-            <div class="all select">Tous</div>
-            <div class="perso">Personnel</div>
-            <div class="pro">Professionel</div>
-            <div class="sco">Scolaire</div>
-        </div>
-
-        <div class="grid">
-            <div class="card personnel ">
-                <img src="../assets/fondtest.jpg" alt="">
-                <h3>INTRA-GITE</h3>
-                <p>
-                    Création d'un logiciel de gestion <br>
-                    (en cours)
-                </p>
-            </div>
-            <div class="card scolaire">
-                <img src="../assets/fondtest.jpg" alt="">
-                <h3>Ohmyfood</h3>
-                <p>
-                    Création site de menu en ligne <br>
-                    (front - end)
-                </p>
-            </div>
-            <div class="card scolaire">
-                <img src="../assets/fondtest.jpg" alt="">
-                <h3>Réservia</h3>
-                <p>Intégration d'une maquette Adobe XD</p>
-            </div>
-            <div class="card scolaire">
-                <img src="../assets/fondtest.jpg" alt="">
-                <h3>La chouette agance</h3>
-                <p>
-                    Mise en place du référencement <br>
-                    naturel du site + accessibilité
-                </p>
-            </div>
-            <div class="card scolaire">
-                <img src="../assets/fondtest.jpg" alt="">
-                <h3>ECV Architecture</h3>
-                <p>
-                    Création d'un site sur l'architecture <br>
-                    (en cours)
-                </p>
-            </div>
-            <div class="card professionel">
-                <img src="../assets/fondtest.jpg" alt="">
-                <h3>CV et Portfolio</h3>
-                <p>Création de mon CV/Portfolio en ligne</p>
-            </div>
-        </div>
+        <form action="../form_1.php" method="POST">
+            <label for="name">Nom</label>
+            <input type="text" name="name">
+            <label for="mail">Email</label>
+            <input type="mail" name="email">
+            <label for="message">Votre message</label>
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
     </main>
 
     <footer>

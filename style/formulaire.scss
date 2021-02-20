@@ -1,0 +1,127 @@
+@import "variables";
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+    margin: 0;
+}
+
+@include noscript;
+@include navigation;
+@include animation;
+@include stopscroll;
+
+body {
+    width: 100vw;
+    height: 100vh;
+    transition: 500ms ease-in-out;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 95%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 600px) and (max-width: 914px) {
+        height: 50vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 25vh;
+    }
+
+    @media screen and (max-width: 414px) {
+        height: auto;
+        margin-top: 25px;
+    }
+
+    p {
+        font-size: 2.5vw;
+        font-weight: 700;
+
+        @media screen and (max-width: 414px) {
+            font-size: 5vw;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .burger {
+        width: 2.5vw;
+        height: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+        position: relative;
+
+        .ligne {
+            width: 100%;
+            height: 0.3vw;
+            border-radius: 100px;
+            background-color: $deuxieme-couleur;
+            transition: 500ms ease-in-out;
+            position: relative;
+
+            @media screen and (max-width: 414px) {
+                height: 3px;
+            }
+        }
+
+        .l2 {
+            width: 100%;
+            height: 0.3vw;
+            border-radius: 100px;
+            transition: 500ms ease-in-out;
+            position: relative;
+
+            @media screen and (max-width: 414px) {
+                height: 3px;
+            }
+
+            .l2-1,
+            .l2-2 {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: $deuxieme-couleur;
+                transition: 500ms ease-in-out;
+                border-radius: 100px;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@include footer;
