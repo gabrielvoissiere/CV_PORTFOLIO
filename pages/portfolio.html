@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <!-- encodage -->
+    <meta charset="UTF-8">
+    <!-- edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/monogram.svg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/projet.css">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/d55e797bfb.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- titre de la page -->
+    <title>Mes réalisations - CV et Portfolio</title>
+</head>
+
+<body>
+
+    <noscript>
+        <div>
+            <p>
+                Mon CV contient du javascript mais votre <br>
+                navigateur le bloque. Vous ne pourrez pas <br>
+                naviguer entre les pages 🙁
+            </p>
+            <a href="https://support.google.com/adsense/answer/12654?hl=fr" target="blank">Comment activer Javascript
+                ?</a>
+        </div>
+
+        <div class="flou"></div>
+    </noscript>
+
+    <nav>
+        <div class="haut">
+            <p>&#60;nav&#62;</p>
+        </div>
+
+        <div class="millieu">
+            <h2><a href="../index.html">A PROPOS</a></h2>
+            <h2><a href="realisation.html">REALISATION</a></h2>
+            <h2><a href="formulaire.html">CONTACT</a></h2>
+        </div>
+
+
+        <p class="bas">&#60;/nav&#62;</p>
+    </nav>
+
+    <header>
+        <p><a href="../index.html">CV et PORTFOLIO</a></p>
+        <!-- burger -->
+        <div class="burger">
+            <div class="ligne l1"></div>
+            <div class="l2">
+                <div class="l2-1"></div>
+                <div class="l2-2"></div>
+            </div>
+            <div class="ligne l3"></div>
+        </div>
+    </header>
+
+    <main>
+
+        <img src="../assets/fondtest.jpg" alt="illustration">
+
+        <div class="content">
+            <div class="gauche">
+                <div class="int haut">
+                    <h3>Langage utilisés</h3>
+                    <div class="boite">
+                        <div class="rond"></div>
+                        <p>HTML</p>
+                    </div>
+                    <div class="boite">
+                        <div class="rond"></div>
+                        <p>SASS</p>
+                    </div>
+                    <div class="boite">
+                        <div class="rond"></div>
+                        <p>JAVASCRIPT</p>
+                    </div>
+                    <div class="boite">
+                        <div class="rond"></div>
+                        <p>JQUERY</p>
+                    </div>
+                </div>
+
+                <div class=" int millieu">
+                    <h3>Logiciels utilisés</h3>
+                    <div class="boite">
+                        <div class="rond"></div>
+                        <p>Illustrator</p>
+                    </div>
+                    <div class="boite">
+                        <div class="rond"></div>
+                        <p>Adobe XD</p>
+                    </div>
+                    <div class="boite">
+                        <div class="rond"></div>
+                        <p>VSCode</p>
+                    </div>
+                </div>
+
+                <div class="bas">
+                    <i class="fab fa-github"></i>
+                    <p>
+                        le code est disponible <br>
+                        sur Github, <a href="https://github.com/gabrielvoissiere/CV_PORTFOLIO">jetez y un oeil !</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="droite">
+                <div class="content2">
+                    <p>
+                        Réalisation de mon CV et Portfolio (que vous êtes en train de voir ^^), afin de vous
+                        dire qui je suis, ce que je fait, et quelle sont mes compétences. Pas mal hein ?
+                        En plus il y a de la couleur et tout !
+                    </p>
+                    <div class="barre"></div>
+                    <div class="obj">
+                        <h4>Objectifs</h4>
+                        <p>
+                            Réaliser un CV/Portfolio qui soit complet mais pas trop lourd visuellement.
+                            Intuitif, et qui vous permette de bien me connaitre.
+                        </p>
+                    </div>
+                    <div class="desc">
+                        <h4>Description</h4>
+                        <p>
+                            La structure et en HTML, le style en SCSS, et les animations en JQuery, le reste en Javascript "normal". La maquette
+                            a était réaliser via Adobe XD, puis coder sur VSCode. <br>
+                            <br>
+                            Toutes les image viennent de mes projet ou, pour les illustration, de <a class="modifier"
+                                href="unsplash.com">Unsplash</a> et
+                            de <a class="modifier" href="fontawesome.com">Fontawesome</a>. <br>
+                            <br>
+                            Il est responsive (vous pouvez tester), et aucun Framework CSS n'a était utiliser.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="photos">
+            <i id="gauche" class="fas fa-chevron-left" onclick="left()"></i>
+            <div class="galerie">
+                <img id="image1" class="p1" src="../assets/fondtest.jpg" alt="illustration">
+                <img id="image2" class="p2" src="../assets/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+                    alt="illustration">
+                <img id="image3" class="p3" src="../assets/Deca-Dence-Natsumi-Kabugari.jpeg" alt="illustration">
+            </div>
+            <i id="droite" class="fas fa-chevron-right" onclick="right()"></i>
+        </div>
+
+        <button onclick="document.location = 'intragite.html'">Voir le projet suivant <div><i
+                    class="fas fa-arrow-right"></i></div> </button>
+    </main>
+
+    <footer>
+        <div class="balise">
+            <p>&#60;footer&#62;</p>
+        </div>
+
+        <div class="content">
+            <h4>CONTACT</h4>
+
+            <div class="liens">
+                <div class="icon">
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fas fa-at"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="lien">
+                    <a href="https://www.linkedin.com/in/gabriel-voissiere-23663b1b8">In/Gabriel Voissiere</a>
+                    <a href="mailto:gabvoissiere.pro@yahoo.com">gabvoissiere.pro@yahoo.com</a>
+                    <a href="#">(+33) 6 95 90 13 10</a>
+                </div>
+            </div>
+        </div>
+        <div class="balise2">
+            <p>&#60;/footer&#62;</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/slider.js"></script>
+</body>
+
+</html>

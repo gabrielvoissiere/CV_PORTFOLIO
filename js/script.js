@@ -13,28 +13,28 @@ $(document).ready(function(){
     $(".all").click(function () { 
         $(this).siblings().removeClass("select")
         $(this).addClass("select")
-        $(".scolaire, .professionel, .personnel").css("display", "block")
+        $(".scolaire, .professionel, .personnel").removeClass("disapear")
     });
 
     $(".perso").click(function () { 
         $(this).siblings().removeClass("select")
         $(this).addClass("select")
-        $(".personnel").css("display", "block")
-        $(".scolaire, .professionel").css("display", "none")
+        $(".personnel").removeClass("disapear")
+        $(".scolaire, .professionel").addClass("disapear")
     });
 
     $(".pro").click(function () { 
         $(this).siblings().removeClass("select")
         $(this).addClass("select")
-        $(".professionel").css("display", "block")
-        $(".scolaire, .personnel").css("display", "none")
+        $(".professionel").removeClass("disapear")
+        $(".scolaire, .personnel").addClass("disapear")
     });
 
     $(".sco").click(function () { 
         $(this).siblings().removeClass("select")
         $(this).addClass("select")
-        $(".scolaire").css("display", "block")
-        $(".professionel, .personnel").css("display", "none")
+        $(".scolaire").removeClass("disapear")
+        $(".professionel, .personnel").addClass("disapear")
     });
 
     // validation du formulaire

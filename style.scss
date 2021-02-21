@@ -148,6 +148,10 @@ header {
                     height: 25px;
                 }
             }
+
+            .burger:hover {
+                cursor: pointer;
+            }
         }
     }
 
@@ -611,6 +615,7 @@ main {
 
                             p {
                                 margin-right: 5px;
+                                font-size: 1vw;
 
                                 @media screen and (max-width: 414px) {
                                     font-size: 1.2rem;

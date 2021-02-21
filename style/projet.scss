@@ -1,0 +1,362 @@
+@import "variables";
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+    margin: 0;
+}
+
+@include noscript;
+@include navigation;
+@include animation;
+@include stopscroll;
+
+body {
+    width: 100vw;
+    height: 100vh;
+    transition: 500ms ease-in-out;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 95%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 600px) and (max-width: 914px) {
+        height: 50vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 25vh;
+    }
+
+    @media screen and (max-width: 414px) {
+        height: auto;
+        margin-top: 25px;
+    }
+
+    p {
+        font-size: 2.5vw;
+        font-weight: 700;
+        text-shadow: $deuxieme-couleur 2px 2px;
+
+        @media screen and (max-width: 414px) {
+            font-size: 5vw;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .burger {
+        width: 2.5vw;
+        height: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+        position: relative;
+
+        .ligne {
+            width: 100%;
+            height: 0.3vw;
+            border-radius: 100px;
+            background-color: $deuxieme-couleur;
+            transition: 500ms ease-in-out;
+            position: relative;
+
+            @media screen and (max-width: 414px) {
+                height: 3px;
+            }
+        }
+
+        .l2 {
+            width: 100%;
+            height: 0.3vw;
+            border-radius: 100px;
+            transition: 500ms ease-in-out;
+            position: relative;
+
+            @media screen and (max-width: 414px) {
+                height: 3px;
+            }
+
+            .l2-1,
+            .l2-2 {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: $deuxieme-couleur;
+                transition: 500ms ease-in-out;
+                border-radius: 100px;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .burger:hover {
+        cursor: pointer;
+    }
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 20vw;
+        object-fit: cover;
+    }
+
+    .content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        @media screen and (max-width: 414px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+        .gauche {
+            width: 30%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media screen and (max-width: 414px) {
+                width: 100%;
+            }
+
+            .millieu {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            .int {
+
+                @media screen and (max-width: 600px) {
+                    margin-bottom: 0px;
+                    margin-top: 25px;
+                }
+
+                h3 {
+                    font-size: 1.2vw;
+
+                    @media screen and (max-width: 414px) {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                .boite {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-size: 1vw;
+                    margin-left: 20px;
+
+                    @media screen and (max-width: 414px) {
+                        font-size: 1.2rem;
+                    }
+
+                    .rond {
+                        width: 8px;
+                        height: 8px;
+                        background-color: black;
+                        border-radius: 100%;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .bas {
+                width: 50%;
+                height: 10vw;
+                border-radius: 10px;
+                border: 2px solid $deuxieme-couleur;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                @media screen and (max-width: 414px) {
+                    width: 100%;
+                    h20vw
+                }
+
+                p {
+                    font-size: 1vw;
+                    font-weight: 500;
+
+                    a {
+                        color: $deuxieme-couleur;
+                        text-decoration: none;
+                        transition: 300ms ease-in-out;
+                        border: 2px solid transparent;
+                    }
+
+                    a:hover {
+                        border-bottom: 2px solid $deuxieme-couleur;
+                    }
+                }
+
+                i {
+                    font-size: 3vw;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .droite {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .content2 {
+                width: 70%;
+
+                h4 {
+                    font-size: 1.2vw;
+                    margin-top: 15px;
+                }
+
+                p {
+                    font-size: 1vw;
+
+                    a {
+                        color: $deuxieme-couleur;
+                        text-decoration: none;
+                        font-weight: 700;
+                    }
+                }
+
+                .barre {
+                    height: 6px;
+                    width: 4vw;
+                    margin: 20px 0px;
+                    background-color: $deuxieme-couleur;
+                }
+            }
+        }
+    }
+
+    .photos {
+
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        i {
+            font-size: 4vw;
+            transition: 200ms ease-in-out;
+        }
+
+        #gauche:hover {
+            text-shadow: $deuxieme-couleur -4px 0px;
+        }
+
+        #droite:hover {
+            text-shadow: $deuxieme-couleur 4px 0px;
+        }
+
+        .galerie {
+            width: 50%;
+            height: 30vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 100px 0px;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 500ms ease-in-out;
+                position: absolute;
+                z-index: 0;
+            }
+        }
+    }
+
+    button {
+        border: none;
+        background-color: white;
+        border-radius: 10px;
+        font-size: 1.5vw;
+        font-weight: 700;
+        margin-bottom: 50px;
+        outline: none;
+        text-transform: uppercase;
+        transition: 300ms ease-in-out;
+        display: flex;
+        align-items: center;
+
+        div {
+            transition: 500ms ease-in-out;
+            transform: translateX(-100%);
+            opacity: 0;
+            margin-left: 20px;
+            text-shadow: none;
+        }
+    }
+
+    button:hover {
+        cursor: pointer;
+        text-shadow: $deuxieme-couleur 2px 2px;
+    }
+
+    button:hover div {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@include footer;

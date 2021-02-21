@@ -122,6 +122,10 @@ header {
             height: 25px;
         }
     }
+
+    .burger:hover {
+        cursor: pointer;
+    }
 }
 
 main {
@@ -189,7 +193,8 @@ main {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            transition: 300ms ease-in-out;
+            transition: 500ms ease-in-out;
+
 
             img {
                 width: 100%;
@@ -213,6 +218,10 @@ main {
                 }
             }
         }
+
+        .card:hover {
+            cursor: pointer;
+        }
     }
 
     .select
@@ -220,6 +229,11 @@ main {
         background-color: $deuxieme-couleur;
         padding: 5px 10px;
         border-radius: 10px;
+    }
+
+    .disapear {
+        transform: translateX(100%);
+        opacity: 0;
     }
 }
 

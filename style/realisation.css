@@ -411,6 +411,10 @@ header .burger .l2 .l2-2 {
   }
 }
 
+header .burger:hover {
+  cursor: pointer;
+}
+
 main {
   width: 100%;
   height: auto;
@@ -518,8 +522,8 @@ main .grid .card {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
 }
 
 main .grid .card img {
@@ -548,10 +552,20 @@ main .grid .card p {
   }
 }
 
+main .grid .card:hover {
+  cursor: pointer;
+}
+
 main .select {
   background-color: #31B141;
   padding: 5px 10px;
   border-radius: 10px;
+}
+
+main .disapear {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
 }
 
 footer {

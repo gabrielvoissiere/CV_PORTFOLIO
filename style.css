@@ -455,6 +455,10 @@ header .haut .droite .burger .l2 .l2-1, header .haut .droite .burger .l2 .l2-2 {
   }
 }
 
+header .haut .droite .burger:hover {
+  cursor: pointer;
+}
+
 header .millieu {
   width: 100%;
   height: 80%;
@@ -1101,6 +1105,7 @@ main .cursus-competence .competence .comp .element .deco .phrase {
 
 main .cursus-competence .competence .comp .element .deco .phrase p {
   margin-right: 5px;
+  font-size: 1vw;
 }
 
 @media screen and (max-width: 414px) {
