@@ -381,6 +381,7 @@ header .haut .droite a {
   color: black;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 414px) {

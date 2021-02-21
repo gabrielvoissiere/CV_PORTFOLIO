@@ -89,6 +89,7 @@ header {
                 text-decoration: none;
                 color: black;
                 transition: 300ms ease-in-out;
+                visibility: hidden; //! a enlever quand page traduite operationel
 
                 @media screen and (max-width: 414px) {
                     font-size: 1.6rem;
