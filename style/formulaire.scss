@@ -145,6 +145,10 @@ main {
         justify-content: center;
         text-align: center;
         font-size: 2vw;
+
+        @media screen and (max-width: 414px) {
+            font-size: 6vw;
+        }
     }
 
     form {
@@ -156,8 +160,17 @@ main {
         height: auto;
         margin: 100px 0px;
 
+        @media screen and (max-width: 414px) {
+            width: 95%;
+            margin: 50px 0px;
+        }
+
         p {
             font-size: 1vw;
+
+            @media screen and (max-width: 414px) {
+                font-size: 5vw;
+            }
         }
 
         .info {
@@ -177,6 +190,10 @@ main {
                 label {
                     font-size: 1vw;
                     font-weight: 600;
+
+                    @media screen and (max-width: 414px) {
+                        font-size: 5vw;
+                    }
                 }
 
                 input {
@@ -203,12 +220,19 @@ main {
 
             width: 100%;
             height: auto;
-
             margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             label {
                 font-size: 1vw;
                 font-weight: 600;
+                align-self: flex-start;
+
+                @media screen and (max-width: 414px) {
+                    font-size: 5vw;
+                }
             }
 
             textarea {
@@ -220,6 +244,11 @@ main {
                 width: 100%;
                 background-color: transparent;
                 transition: 200ms ease-in-out;
+                padding: 0;
+
+                @media screen and (max-width: 414px) {
+                    margin-top: 0;         
+                }
             }
 
             .invalidmsg {
@@ -239,6 +268,10 @@ main {
             outline: none;
             border: none;
             background-color: $deuxieme-couleur;
+
+            @media screen and (max-width: 414px) {
+                font-size: 5vw;
+            }
         }
     }
 }

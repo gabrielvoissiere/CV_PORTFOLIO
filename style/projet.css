@@ -61,6 +61,12 @@ noscript div {
   padding: 20px;
 }
 
+@media screen and (max-width: 414px) {
+  noscript div {
+    width: 100%;
+  }
+}
+
 noscript div p {
   margin: 20px 0px;
   font-size: 1.8rem;
@@ -322,7 +328,7 @@ header {
 @media screen and (max-width: 414px) {
   header {
     height: auto;
-    margin-top: 25px;
+    margin: 10px 0px;
   }
 }
 
@@ -334,7 +340,7 @@ header p {
 
 @media screen and (max-width: 414px) {
   header p {
-    font-size: 5vw;
+    font-size: 8vw;
   }
 }
 
@@ -438,6 +444,12 @@ main img {
      object-fit: cover;
 }
 
+@media screen and (max-width: 414px) {
+  main img {
+    height: 40vw;
+  }
+}
+
 main .content {
   width: 100%;
   height: auto;
@@ -491,7 +503,6 @@ main .content .gauche .millieu {
 @media screen and (max-width: 600px) {
   main .content .gauche .int {
     margin-bottom: 0px;
-    margin-top: 25px;
   }
 }
 
@@ -557,13 +568,27 @@ main .content .gauche .bas {
 
 @media screen and (max-width: 414px) {
   main .content .gauche .bas {
-    width: 100%;
+    width: 95%;
+    height: 20vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 40px;
   }
 }
 
 main .content .gauche .bas p {
   font-size: 1vw;
   font-weight: 500;
+}
+
+@media screen and (max-width: 414px) {
+  main .content .gauche .bas p {
+    font-size: 4vw;
+  }
 }
 
 main .content .gauche .bas p a {
@@ -583,6 +608,13 @@ main .content .gauche .bas i {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 414px) {
+  main .content .gauche .bas i {
+    margin: 0;
+    font-size: 15vw;
+  }
+}
+
 main .content .droite {
   width: 70%;
   display: -webkit-box;
@@ -597,8 +629,21 @@ main .content .droite {
           align-items: center;
 }
 
+@media screen and (max-width: 414px) {
+  main .content .droite {
+    width: 90%;
+    margin-top: 25px;
+  }
+}
+
 main .content .droite .content2 {
   width: 70%;
+}
+
+@media screen and (max-width: 414px) {
+  main .content .droite .content2 {
+    width: 100%;
+  }
 }
 
 main .content .droite .content2 h4 {
@@ -606,8 +651,20 @@ main .content .droite .content2 h4 {
   margin-top: 15px;
 }
 
+@media screen and (max-width: 414px) {
+  main .content .droite .content2 h4 {
+    font-size: 6vw;
+  }
+}
+
 main .content .droite .content2 p {
   font-size: 1vw;
+}
+
+@media screen and (max-width: 414px) {
+  main .content .droite .content2 p {
+    font-size: 4vw;
+  }
 }
 
 main .content .droite .content2 p a {
@@ -621,6 +678,12 @@ main .content .droite .content2 .barre {
   width: 4vw;
   margin: 20px 0px;
   background-color: #31B141;
+}
+
+@media screen and (max-width: 414px) {
+  main .content .droite .content2 .barre {
+    width: 20vw;
+  }
 }
 
 main .photos {
@@ -676,6 +739,14 @@ main .photos .galerie {
   position: relative;
 }
 
+@media screen and (max-width: 414px) {
+  main .photos .galerie {
+    width: 80%;
+    height: 60vw;
+    margin: 50px 0px;
+  }
+}
+
 main .photos .galerie img {
   width: 100%;
   height: 100%;
@@ -706,6 +777,12 @@ main button {
           align-items: center;
 }
 
+@media screen and (max-width: 414px) {
+  main button {
+    font-size: 6vw;
+  }
+}
+
 main button div {
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
@@ -714,6 +791,15 @@ main button div {
   opacity: 0;
   margin-left: 20px;
   text-shadow: none;
+}
+
+@media screen and (max-width: 1024px) {
+  main button div {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+    margin-left: 10px;
+  }
 }
 
 main button:hover {

@@ -230,11 +230,6 @@ main {
         padding: 5px 10px;
         border-radius: 10px;
     }
-
-    .disapear {
-        transform: translateX(100%);
-        opacity: 0;
-    }
 }
 
 @include footer;

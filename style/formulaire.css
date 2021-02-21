@@ -61,6 +61,12 @@ noscript div {
   padding: 20px;
 }
 
+@media screen and (max-width: 414px) {
+  noscript div {
+    width: 100%;
+  }
+}
+
 noscript div p {
   margin: 20px 0px;
   font-size: 1.8rem;
@@ -453,6 +459,12 @@ main h3 {
   font-size: 2vw;
 }
 
+@media screen and (max-width: 414px) {
+  main h3 {
+    font-size: 6vw;
+  }
+}
+
 main form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,8 +484,21 @@ main form {
   margin: 100px 0px;
 }
 
+@media screen and (max-width: 414px) {
+  main form {
+    width: 95%;
+    margin: 50px 0px;
+  }
+}
+
 main form p {
   font-size: 1vw;
+}
+
+@media screen and (max-width: 414px) {
+  main form p {
+    font-size: 5vw;
+  }
 }
 
 main form .info {
@@ -505,6 +530,12 @@ main form .info .label label {
   font-weight: 600;
 }
 
+@media screen and (max-width: 414px) {
+  main form .info .label label {
+    font-size: 5vw;
+  }
+}
+
 main form .info .label input {
   padding: 0;
   border-bottom: 2px solid #31B141;
@@ -527,11 +558,29 @@ main form .message {
   width: 100%;
   height: auto;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main form .message label {
   font-size: 1vw;
   font-weight: 600;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media screen and (max-width: 414px) {
+  main form .message label {
+    font-size: 5vw;
+  }
 }
 
 main form .message textarea {
@@ -544,6 +593,13 @@ main form .message textarea {
   background-color: transparent;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
+  padding: 0;
+}
+
+@media screen and (max-width: 414px) {
+  main form .message textarea {
+    margin-top: 0;
+  }
 }
 
 main form .message .invalidmsg {
@@ -564,5 +620,11 @@ main form button {
   outline: none;
   border: none;
   background-color: #31B141;
+}
+
+@media screen and (max-width: 414px) {
+  main form button {
+    font-size: 5vw;
+  }
 }
 /*# sourceMappingURL=formulaire.css.map */

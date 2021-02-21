@@ -61,6 +61,12 @@ noscript div {
   padding: 20px;
 }
 
+@media screen and (max-width: 414px) {
+  noscript div {
+    width: 100%;
+  }
+}
+
 noscript div p {
   margin: 20px 0px;
   font-size: 1.8rem;
