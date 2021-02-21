@@ -437,16 +437,87 @@ main {
           align-items: center;
 }
 
-main img {
+main .img-intragite {
   width: 100%;
   height: 20vw;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: url("../assets/banintragite.svg");
+  background-size: cover;
 }
 
 @media screen and (max-width: 414px) {
-  main img {
+  main .img-intragite {
     height: 40vw;
+    background-image: url("../assets/fondtest.jpg");
+  }
+}
+
+main .img-ecvarchitecture {
+  width: 100%;
+  height: 20vw;
+  background-image: url("../assets/banarchi.svg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 414px) {
+  main .img-ecvarchitecture {
+    height: 40vw;
+    background-image: url("../assets/fondtest.jpg");
+  }
+}
+
+main .img-cvportfolio {
+  width: 100%;
+  height: 20vw;
+  background-image: url("../assets/bancvportfolio.svg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 414px) {
+  main .img-cvportfolio {
+    height: 40vw;
+    background-image: url("../assets/fondtest.jpg");
+  }
+}
+
+main .img-omf {
+  width: 100%;
+  height: 20vw;
+  background-image: url("../assets/banomf.svg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 414px) {
+  main .img-omf {
+    height: 40vw;
+    background-image: url("../assets/fondtest.jpg");
+  }
+}
+
+main .img-reservia {
+  width: 100%;
+  height: 20vw;
+  background-image: url("../assets/banreservia.svg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 414px) {
+  main .img-reservia {
+    height: 40vw;
+    background-image: url("../assets/fondtest.jpg");
+  }
+}
+
+main .img-chouette {
+  width: 100%;
+  height: 20vw;
+  background-image: url("../assets/banchouetteagence.svg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 414px) {
+  main .img-chouette {
+    height: 40vw;
+    background-image: url("../assets/fondtest.jpg");
   }
 }
 

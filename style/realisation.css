@@ -534,7 +534,9 @@ main .grid .card {
 
 main .grid .card img {
   width: 100%;
-  height: auto;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 main .grid .card h3 {
