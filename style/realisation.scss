@@ -231,6 +231,14 @@ main {
         padding: 5px 10px;
         border-radius: 10px;
     }
+
+    .block {
+        display: block
+    }
+
+    .none {
+        display: none
+    }
 }
 
 @include footer;
