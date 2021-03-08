@@ -7,3 +7,7 @@ document.querySelector(".burger").addEventListener('click', function () {
     document.querySelector(".l3").classList.toggle("hide")
     document.querySelector("body").classList.toggle("stop")
 })
+
+window.addEventListener('DOMContentLoaded' , () => {
+    // a remplir
+})
